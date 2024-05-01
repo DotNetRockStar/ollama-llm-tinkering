@@ -11,7 +11,7 @@ Run the app:
 ## What Does it Do?
 We want to demonstrate how to ask the Llama LLM a question, demonstrate how to fetch data about the question, feed data as context,  ask the exact same question again and receive different (better) answer.
 
-1. Ask llama: W`hat is Ollama?  Receive response X.`
+1. Ask llama: `What is Ollama?  Receive response X.`
 2. Pull text from 3 web pages, create embeddings from model, and store in Chroma vector db: https://ollama.com, https://ollama.com/blog/windows-preview, https://ollama.com/blog/openai-compatibility 
 3. Re-Ask llama the same question but add context data from step 2: `What is Ollama?  Receive response Y.`
 
