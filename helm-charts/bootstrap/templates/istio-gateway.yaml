@@ -7,20 +7,20 @@ spec:
     istio: gateway
   servers:
   - port:
-      number: 42155
-      name: http
+      number: 41123
+      name: http41123
       protocol: HTTP
     hosts:
     - "*"
   - port:
       number: 80
-      name: http
+      name: http80
       protocol: HTTP
     hosts:
     - "*"
   - port:
       number: 1111
-      name: http
+      name: http1111
       protocol: HTTP
     hosts:
     - "*"
