@@ -10,10 +10,14 @@ spec:
       number: 42155
       name: http
       protocol: HTTP
+    hosts:
+    - "*"
   - port:
       number: 80
       name: http
       protocol: HTTP
+    hosts:
+    - "*"
   - port:
       number: 1111
       name: http
