@@ -22,3 +22,5 @@ This project is a playground for tinkering with llama3 genai.
 - llama3
 - ollama (https://github.com/ollama/ollama)
 
+# Links
+- Starting point gathered from https://www.youtube.com/watch?v=jENqvjpkwmw&ab_channel=MervinPraison
