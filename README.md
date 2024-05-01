@@ -9,7 +9,7 @@ Run the app:
 ```
 
 ## What Does it Do?
-We want to demonstrate how to ask the Llama LLM a question, demonstrate how to fetch data about the question, feed data as context in to follow up question, then receive different (better) answer.
+We want to demonstrate how to ask the Llama LLM a question, demonstrate how to fetch data about the question, feed data as context,  ask the exact same question again and receive different (better) answer.
 
 1. Ask llama: W`hat is Ollama?  Receive response X.`
 2. Pull text from 3 web pages, create embeddings from model, and store in Chroma vector db: https://ollama.com, https://ollama.com/blog/windows-preview, https://ollama.com/blog/openai-compatibility 
