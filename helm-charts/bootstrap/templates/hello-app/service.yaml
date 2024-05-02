@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: hello-app
 spec:
+  type: ClusterIP
   selector:
-    app.kubernetes.io/name: hello-app
+    app: hello-app
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
-      targetPort: hello-app-port
+      targetPort: 80

@@ -7,3 +7,9 @@ helm uninstall bootstrap --wait
 
 # Uninstall the service mesh
 $SCRIPT_DIR/../helm-charts/uninstall-istio.sh
+
+# Uninstall prometheus
+helm uninstall prometheus
+
+# Uninstall Kiali
+helm uninstall kiali-server -n istio-system

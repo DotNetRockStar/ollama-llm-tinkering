@@ -6,14 +6,12 @@ spec:
   hosts:
   - "*"
   gateways:
-  - istio-gateway
+  - istio-ingressgateway
   http:
   - name: 'route-hello-app'
     match:
     - uri:
         prefix: /hello-app
-    rewrite:
-      uri: "/"
     route:
     - destination:
         port:
