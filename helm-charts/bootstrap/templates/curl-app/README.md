@@ -1,0 +1,2 @@
+# Overview
+This `curl-app` is simply to deploy a container with the ability to curl so that testing can be done from within the cluster.  This app takes no ingress and is simply a logical "jump box" for testing.

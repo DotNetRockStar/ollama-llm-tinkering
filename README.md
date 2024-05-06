@@ -1,6 +1,18 @@
 # TL;DR
 
-Run the app:
+Run Kubernetes Deployment & Simulation:
+```
+# Install ISTIO and deploy environment to k8s
+./simulation/create.sh
+
+# Upgrade environment
+helm upgrade ./helm-charts/bootstrap .
+
+# Tear down environment and uninstall ISTIO
+./simulation/destroy.sh
+```
+
+Run ollama app:
 ```
 % pip install BeautifulSoup4 langchain langchain-community langchain-core tikToken chromadb
 % ollama pull nomic-embed-text

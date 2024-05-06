@@ -6,9 +6,9 @@ spec:
   hosts:
   - "*"
   gateways:
-  - istio-ingressgateway
+  - istio-system/istio-ingressgateway
   http:
-  - name: 'route-hello-app'
+  - name: 'hello-app'
     match:
     - uri:
         prefix: /hello-app
@@ -16,4 +16,4 @@ spec:
     - destination:
         port:
           number: 80
-        host: hello-app
+        host: hello-app.default.svc.cluster.local
