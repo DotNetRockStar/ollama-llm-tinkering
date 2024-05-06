@@ -15,8 +15,8 @@ else
     echo "istio/istiod helm chart already installed."
 fi  
 
-if [[ $(helm ls -n istio-system | grep istio-ingress) == "" ]]; then
-    helm install istio-ingress istio/gateway --set service.type=ClusterIP -n istio-system --wait --create-namespace
+if [[ $(helm ls -n istio-system | grep istio-gateway) == "" ]]; then
+    helm install istio-gateway istio/gateway --set service.type=NodePort -n istio-system --wait --create-namespace
 else
     echo "istio/gateway helm chart already installed."
 fi

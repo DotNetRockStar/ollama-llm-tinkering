@@ -13,6 +13,8 @@ spec:
     metadata:
       labels:
         app: hello-app
+      annotations:
+        sidecar.istio.io/agentLogLevel: "debug"
     spec:
       containers:
       - name: nginx
