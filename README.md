@@ -2,14 +2,16 @@
 
 Run Kubernetes Deployment & Simulation:
 ```
-# Install ISTIO and deploy environment to k8s
-./simulation/create.sh
+% ./simulation/create.sh
+% curl http://localhost:30000/hello-app
 
-# Upgrade environment
-helm upgrade ./helm-charts/bootstrap .
+# Get istio proxy logs for hello-app
+% kubectl logs -c istio-proxy --selector app=hello-app
+# Get container logs for hello-app
+% kubectl logs--selector app=hello-app
 
-# Tear down environment and uninstall ISTIO
-./simulation/destroy.sh
+# Tear it down
+% ./simulation/destroy.sh
 ```
 
 Run ollama app:
