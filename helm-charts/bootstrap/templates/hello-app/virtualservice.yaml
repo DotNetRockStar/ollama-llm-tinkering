@@ -1,19 +1,19 @@
-# apiVersion: networking.istio.io/v1alpha3
-# kind: VirtualService
-# metadata:
-#   name: istio-vs
-# spec:
-#   hosts:
-#   - "*"
-#   gateways:
-#   - istio-system/istio-ingressgateway
-#   http:
-#   - name: 'hello-app'
-#     match:
-#     - uri:
-#         prefix: /hello-app
-#     route:
-#     - destination:
-#         port:
-#           number: 80
-#         host: hello-app.default.svc.cluster.local
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: istio-vs
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - istio-system/istio-ingressgateway
+  http:
+  - name: 'hello-app'
+    match:
+    - uri:
+        prefix: /hello-app
+    route:
+    - destination:
+        port:
+          number: 80
+        host: hello-app.default.svc.cluster.local
